@@ -3,14 +3,18 @@
 user = input ("Enter your name: ")
 print('Welcome to this CLI ' + user)
 
-print("Please login")
-username = input ("Enter your username: ")
+option = int(input("Would you like to: \n 1. Sign up \n 2. Login \n"))
 
-if username == admin:
+if option == 1:
+    username = input("Choose a username: ")
+    password = input("Choose a password: ")
 
-if username == moderator:
+if option == 2:
+    username = input("Enter your username: ")
+    password = input("Enter your password: ")
 
 else:
+    print("Not available.")
     
 
  
